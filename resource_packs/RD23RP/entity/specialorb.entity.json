@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:specialorb",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/specialorb"
+      },
+
+      "geometry": {
+        "default": "geometry.specialorb"
+      },
+      "animations": {
+	      "spin": "animation.specialorb.spin"
+      },
+      "scripts": {          
+          "animate": [
+            "spin"
+          ]
+        },
+      "render_controllers": ["controller.render.specialorb"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

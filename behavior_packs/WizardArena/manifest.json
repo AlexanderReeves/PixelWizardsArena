@@ -1,0 +1,31 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "WizardArena",
+		"description": "WizardArena Behavior Pack",
+		"uuid": "9b589d02-3610-8a8c-066d-43c2a3ced85d",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["Mapex Games"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.3.1"],
+			"blockbench_item_wizard": ["1.0.2"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Behavior",
+			"version": [1, 0, 0],
+			"uuid": "3bc1c5cc-815b-600f-ff13-2044ac772d22",
+			"type": "data"
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "10a98e8a-9b5a-cd5a-f2a8-d5860b9fa4aa",
+			"version": [1, 0, 0]
+		}
+	]
+}

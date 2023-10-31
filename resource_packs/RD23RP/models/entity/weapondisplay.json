@@ -1,0 +1,155 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.weapondisplay",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 13,
+				"visible_bounds_height": 9,
+				"visible_bounds_offset": [0, 0, 0]
+			},
+			"bones": [
+				{
+					"name": "whole",
+					"pivot": [-21, 7, 0],
+					"rotation": [-90, -90, 0]
+				},
+				{
+					"name": "weapons",
+					"parent": "whole",
+					"pivot": [-28, -20, 2],
+					"rotation": [-90, 90, 0]
+				},
+				{
+					"name": "doubleinternal",
+					"parent": "weapons",
+					"pivot": [-31, 6, -8],
+					"rotation": [-90, -90, 0],
+					"cubes": [
+						{"origin": [-45.1, 6, -10.8], "size": [27, 1, 4], "uv": [0, 59]}
+					]
+				},
+				{
+					"name": "flameinternal",
+					"parent": "weapons",
+					"pivot": [-31, 29, -4],
+					"rotation": [-90, -90, 0],
+					"cubes": [
+						{"origin": [-46.1, 29, -6.8], "size": [20, 1, 4], "uv": [0, 54]}
+					]
+				},
+				{
+					"name": "axe",
+					"parent": "weapons",
+					"pivot": [-28, 5, -97],
+					"rotation": [0, 180, -32.5]
+				},
+				{
+					"name": "axeinternal",
+					"parent": "axe",
+					"pivot": [-29, 5, -97],
+					"cubes": [
+						{"origin": [-45.1, 2, -97.5], "size": [2, 8, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [53, 47], "mirror": true},
+						{"origin": [-38.1, 2, -97.5], "size": [2, 8, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [53, 47]},
+						{"origin": [-46.1, 3, -97.5], "size": [1, 5, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [49, 49], "mirror": true},
+						{"origin": [-36.1, 3, -97.5], "size": [1, 5, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [49, 49]},
+						{"origin": [-43.1, 3.8, -97.5], "size": [5, 1, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [7, 62]},
+						{"origin": [-43.1, 6.2, -97.5], "size": [5, 1, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [7, 62]},
+						{"origin": [-43.1, 5, -97.5], "size": [5, 1, 1], "pivot": [-41, 5, -98], "rotation": [0, 0, -90], "uv": [40, 48]},
+						{"origin": [-40.1, 5, -97.5], "size": [14, 1, 1], "uv": [0, 49]},
+						{"origin": [-35.1, 4.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]},
+						{"origin": [-26.1, 4.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]},
+						{"origin": [-40.1, 4.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]}
+					]
+				},
+				{
+					"name": "axe2",
+					"parent": "weapons",
+					"pivot": [-28, 6, -97],
+					"rotation": [0, 180, 32.5]
+				},
+				{
+					"name": "axeinternal2",
+					"parent": "axe2",
+					"pivot": [-29, 6, -97],
+					"cubes": [
+						{"origin": [-45.1, 3, -97.5], "size": [2, 8, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [53, 47], "mirror": true},
+						{"origin": [-38.1, 3, -97.5], "size": [2, 8, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [53, 47]},
+						{"origin": [-46.1, 4, -97.5], "size": [1, 5, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [49, 49], "mirror": true},
+						{"origin": [-36.1, 4, -97.5], "size": [1, 5, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [49, 49]},
+						{"origin": [-43.1, 4.8, -97.5], "size": [5, 1, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [7, 62]},
+						{"origin": [-43.1, 7.2, -97.5], "size": [5, 1, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [7, 62]},
+						{"origin": [-43.1, 6, -97.5], "size": [5, 1, 1], "pivot": [-41, 6, -98], "rotation": [0, 0, -90], "uv": [40, 48]},
+						{"origin": [-40.1, 6, -97.5], "size": [14, 1, 1], "uv": [0, 49]},
+						{"origin": [-35.1, 5.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]},
+						{"origin": [-26.1, 5.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]},
+						{"origin": [-40.1, 5.75, -97.5], "size": [2, 1.5, 1.5], "uv": [0, 49]}
+					]
+				},
+				{
+					"name": "hammer",
+					"parent": "weapons",
+					"pivot": [-35, -19, -94],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "hammerinternal",
+					"parent": "hammer",
+					"pivot": [-36, -18.5, -94],
+					"cubes": [
+						{"origin": [-52.1, -12, -96.8], "size": [9, 5, 4.5], "pivot": [-48, -19, -96], "rotation": [0, 0, -90], "uv": [22, 36]},
+						{"origin": [-43.1, -12.5, -97.8], "size": [1, 6, 6], "pivot": [-48, -19, -96], "rotation": [0, 0, -90], "uv": [50, 27]},
+						{"origin": [-53.1, -12.5, -97.8], "size": [1, 6, 6], "pivot": [-48, -19, -96], "rotation": [0, 0, -90], "uv": [50, 27]},
+						{"origin": [-55.1, -19, -94.8], "size": [22, 1, 1], "uv": [0, 43]},
+						{"origin": [-33.1, -19.25, -95], "size": [5, 1.5, 1.5], "uv": [0, 43]},
+						{"origin": [-53.1, -19.25, -95], "size": [2, 1.5, 1.5], "uv": [0, 43]},
+						{"origin": [-47.1, -19.25, -95], "size": [2, 1.5, 1.5], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "hammer2",
+					"parent": "weapons",
+					"pivot": [-35, 29, -95],
+					"rotation": [0, 180, 0]
+				},
+				{
+					"name": "hammerinternal2",
+					"parent": "hammer2",
+					"pivot": [-36, 29.5, -95],
+					"cubes": [
+						{"origin": [-52.1, 36, -97.8], "size": [9, 5, 4.5], "pivot": [-48, 29, -97], "rotation": [0, 0, -90], "uv": [22, 36]},
+						{"origin": [-43.1, 35.5, -98.8], "size": [1, 6, 6], "pivot": [-48, 29, -97], "rotation": [0, 0, -90], "uv": [50, 27]},
+						{"origin": [-53.1, 35.5, -98.8], "size": [1, 6, 6], "pivot": [-48, 29, -97], "rotation": [0, 0, -90], "uv": [50, 27]},
+						{"origin": [-55.1, 29, -95.8], "size": [22, 1, 1], "uv": [0, 43]},
+						{"origin": [-33.1, 28.75, -96], "size": [5, 1.5, 1.5], "uv": [0, 43]},
+						{"origin": [-53.1, 28.75, -96], "size": [2, 1.5, 1.5], "uv": [0, 43]},
+						{"origin": [-47.1, 28.75, -96], "size": [2, 1.5, 1.5], "uv": [0, 43]}
+					]
+				},
+				{
+					"name": "scim",
+					"parent": "weapons",
+					"pivot": [-31, -17, 1],
+					"rotation": [-90, -90, 0]
+				},
+				{
+					"name": "sciminternal",
+					"parent": "scim",
+					"pivot": [-32, -16.5, 1],
+					"cubes": [
+						{"origin": [-36.1, -17, 0.2], "size": [5, 1, 1], "uv": [0, 49]},
+						{"origin": [-40.1, -17, -0.5], "size": [2, 1, 2], "uv": [48, 39]},
+						{"origin": [-45.1, -17, -1.5], "size": [5, 1, 3], "uv": [48, 39]},
+						{"origin": [-48.1, -16.95, -0.8], "size": [4, 1, 3], "uv": [48, 39]},
+						{"origin": [-51.1, -17, -0.8], "size": [3, 1, 3], "uv": [48, 39]},
+						{"origin": [-51.1, -17, 2.2], "size": [3, 1, 1], "uv": [48, 39]},
+						{"origin": [-38.1, -17.25, 0.1], "size": [2, 1.5, 1.5], "uv": [0, 49]},
+						{"origin": [-31.1, -17.25, 0], "size": [2, 1.5, 1.5], "uv": [0, 49]}
+					]
+				}
+			]
+		}
+	]
+}

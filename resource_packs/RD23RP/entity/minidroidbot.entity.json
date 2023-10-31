@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:minidroidbot",
+      "materials": {
+        "default": "skeleton",
+        "shield": "slime_outer"
+      },
+      "textures": {
+        "standard": "textures/entity/robot/minidroidbot",
+        "outer": "textures/entity/bshield"
+      },
+
+      "geometry": {
+        "default": "geometry.minidroidbot",
+        "shield": "geometry.bshield"
+      },
+      "animations": {
+	      "walker": "animation.minidroidbot.walk",
+	      "axe": "animation.minidroidbot.axe",
+	      "axe2": "animation.minidroidbot.axe2",
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.axetime = 0;"
+        ],
+        "pre_animation": [
+          "variable.axetime = query.get_equipped_item_name == 'diamond_sword' ? (variable.axetime + 0.008) : 0;"
+        ],
+          "animate": [
+            { "walker" : "query.has_armor_slot(0) * 1" },
+	          "axe2",
+            "look_at_target",
+            {"axe2" : "false"}
+          ]
+        },
+      "render_controllers": ["controller.render.minidroidbot"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

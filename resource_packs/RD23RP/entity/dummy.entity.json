@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "space:dummy",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+      			"default": "textures/entity/robot/robot_whitegreen"
+			},
+			"geometry": {
+				"default": "geometry.dummy"
+			},
+			"animations": {
+			    "wheelspin": "animation.dummy.wheelspin"
+			},
+			"scripts": {       
+        		"animate": [
+          			"wheelspin"
+        		]
+      		},
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

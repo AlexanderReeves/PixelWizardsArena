@@ -1,0 +1,91 @@
+{
+  "format_version": "1.14",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "space:rightbutton",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    
+    "components": {
+
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+              }
+            },
+			"interact_text": "Next Mission",
+			  "spawn_items": {
+				"table": "loot_tables/entities/right.json"
+			  }
+          }
+        ]
+      },
+
+      //the family type for filters
+    "minecraft:type_family": {
+        "family": [
+            "space",
+            "rightbutton",
+            "neutral",
+            "nether_mob"
+        ]
+    },
+    "minecraft:scale": {
+        "value": 2
+    },
+
+
+    "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+    },
+    //hitbox/shadow
+    "minecraft:collision_box": {
+        "width": 0.7,
+        "height": 0.7
+    },
+    //health, speed and some other self-explainable properties
+    "minecraft:nameable": {},
+    "minecraft:health": {
+        "value": 26,
+        "max": 30
+    },
+    "minecraft:movement": {
+        "value": 0.00
+    },
+
+    //How the mob navigates
+    "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+    },
+
+    "minecraft:physics": {"has_gravity": false},
+
+
+    "minecraft:pushable": {
+      "is_pushable": false,
+      "is_pushable_by_piston": true
+    },
+
+    "minecraft:damage_sensor": {
+      "triggers": {
+          "cause": "all",
+          "deals_damage": false
+      }
+    }
+    
+    },
+
+    "events": {
+
+    }
+
+  }
+}

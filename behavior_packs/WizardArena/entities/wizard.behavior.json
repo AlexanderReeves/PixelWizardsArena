@@ -1,0 +1,112 @@
+{
+  "format_version": "1.14",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "wizard:wizard",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {	
+    "minecraft:donkey_saddled": {
+        "minecraft:is_saddled": {
+        },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        }
+      }
+    },
+    
+    "components": {
+
+        "minecraft:equipment": {
+            "table": "loot_tables/entities/gear/mandolorian.json"
+        },
+        "minecraft:horse.jump_strength": {
+        "value": 0.5
+        },
+    
+
+      //the family type for filters
+    "minecraft:type_family": {
+        "family": [
+            "wizard",
+            "wizard",
+            "neutral",
+            "nether_mob"
+        ]
+    },
+
+
+      "minecraft:rideable": {
+        "speed_multiplier": 0.50,
+        "seat_count": 1,
+        "interact_text": "",
+        "pull_in_entities": false,
+        "seats": {
+          "position": [ 0.0, 1, -2]
+        }
+      },
+
+      "minecraft:behavior.player_ride_tamed": {
+      },
+
+      "minecraft:is_tamed": {
+      },
+
+      "minecraft:is_saddled": {},
+
+      
+
+
+      "minecraft:input_ground_controlled": {},
+
+      "minecraft:behavior.controlled_by_player": {
+        "priority": 0,
+        "mount_speed_multiplier": 0.50
+      },
+      
+
+    "minecraft:scale": {
+        "value": 0.75
+    },
+
+
+    "minecraft:breathable": {
+        "totalSupply": 15,
+        "suffocateTime": 0
+    },
+    "minecraft:fire_immune": {
+    },
+    //hitbox/shadow
+    "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+    },
+
+    "minecraft:physics": {"has_gravity": true},
+    //health, speed and some other self-explainable properties
+    "minecraft:nameable": {},
+
+    //it will never die accidentally...
+    "minecraft:health": {
+        "value": 99999,
+        "max": 99999
+    },
+    "minecraft:movement": {
+        "value": 0.08
+    },
+
+    //How the mob navigates
+    "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+    },
+      "minecraft:persistent": {
+      }
+
+    }
+
+  }
+}

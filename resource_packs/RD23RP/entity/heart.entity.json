@@ -1,0 +1,31 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "space:heart",
+        "materials": {
+          "default": "skeleton"
+        },
+        "textures": {
+          "default": "textures/entity/heart"
+        },
+  
+        "geometry": {
+          "default": "geometry.heart"
+        },
+        "animations": {
+            "spin": "animation.heart.spin"
+        },
+        "scripts": {          
+            "animate": [
+                "spin"
+              ]
+          },
+        "render_controllers": ["controller.render.heart"],
+        "spawn_egg": {
+          "base_color": "#000000",
+          "overlay_color": "#ffffff"
+        }
+      }
+    }
+  }

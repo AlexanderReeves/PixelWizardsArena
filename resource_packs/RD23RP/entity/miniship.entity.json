@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:miniship",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/miniship"
+      },
+
+      "geometry": {
+        "default": "geometry.miniship"
+      },
+      "animations": {
+	      "cruise": "animation.miniship.cruise"
+      },
+      "scripts": {          
+        "animate": [
+          "cruise"
+        ]
+        },
+      "render_controllers": ["controller.render.miniship"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

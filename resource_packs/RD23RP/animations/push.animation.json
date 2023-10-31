@@ -1,0 +1,59 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.push.push": {
+			"animation_length": 1.04,
+			"loop" : true,
+			"bones": {
+				"LowerRing": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [0, 0, -8]
+					}
+				},
+				"LowerRing2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [6, 0, -6]
+					}
+				},
+				"LowerRing3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [8, 0, 0]
+					}
+				},
+				"LowerRing4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [6, 0, 6]
+					}
+				},
+				"LowerRing5": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [0, 0, 8]
+					}
+				},
+				"LowerRing6": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [-6, 0, 6]
+					}
+				},
+				"LowerRing7": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [-8, 0, 0]
+					}
+				},
+				"LowerRing8": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.04": [-6, 0, -6]
+					}
+				}
+			}
+		}
+	}
+}

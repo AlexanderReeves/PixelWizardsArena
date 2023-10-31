@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:pull",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "standard": "textures/entity/pull"
+      },
+
+      "geometry": {
+        "default": "geometry.pull"
+      },
+      "animations": {
+	      "pull": "animation.pull.pull"
+      },
+      "scripts": {     
+          "animate": [
+            "pull"
+          ]
+        },
+      "render_controllers": ["controller.render.pull"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

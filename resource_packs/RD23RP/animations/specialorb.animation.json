@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.specialorb.spin": {
+			"loop": true,
+			"animation_length": 1.00,
+			"bones": {
+				"whole": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.00": [0, 0, 0]
+					}
+				},
+				"bands": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.00": [0, 0, 0]
+					}
+				},
+				"bands2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.00": [0, -90, 0]
+					}
+				},
+				"bone": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.00": [360, 360, 0]
+					}
+				},
+				"bands1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.00": [0, 90, 0]
+					}
+				}
+			}
+		}
+	}
+}

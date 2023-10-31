@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"geometry.pig.v1.8": {
+		"texturewidth": 64,
+		"textureheight": 32,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 1,
+		"visible_bounds_offset": [0, 0, 0],
+		"bones": [
+			{
+				"name": "bone5",
+				"pivot": [0, 0, 0],
+				"cubes": [
+					{"origin": [-5, 5, -5], "size": [10, 5, 11], "uv": [0, 0]},
+					{"origin": [-5, 5, -15], "size": [10, 1, 11], "uv": [0, 0]},
+					{"origin": [5, 5, -5], "size": [10, 1, 11], "uv": [0, 0]},
+					{"origin": [-15, 5, -5], "size": [10, 1, 11], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "Front",
+				"pivot": [0, 6, 2],
+				"rotation": [20, 0, 0],
+				"cubes": [
+					{"origin": [-5, 11, -14], "size": [10, 1, 11], "uv": [0, 16]}
+				]
+			}
+		]
+	}
+}

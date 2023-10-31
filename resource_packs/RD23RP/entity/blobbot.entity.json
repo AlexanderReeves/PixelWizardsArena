@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:blobbot",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "standard": "textures/entity/robot/blobbot"
+      },
+
+      "geometry": {
+        "default": "geometry.blobbot"
+      },
+      "animations": {
+	      //"walker": "animation.robot.walk",
+	      "hammer": "animation.blobbot.hammer",
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.hammertime = 0;"
+        ],
+        "pre_animation": [
+          "variable.hammertime = query.get_equipped_item_name == 'diamond_sword' ? (variable.hammertime + 0.016) : 0;"
+        ],
+          
+          "animate": [
+	          "hammer",
+            "look_at_target"
+          ]
+        },
+      "render_controllers": ["controller.render.blobbot"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

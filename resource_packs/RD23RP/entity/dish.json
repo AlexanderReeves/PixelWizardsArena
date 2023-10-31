@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:dish",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/satellite/dish"
+      },
+
+      "geometry": {
+        "default": "geometry.dish"
+      },
+      "animations": {
+	      "float": "animation.satellite.float"
+      },
+      "scripts": {       
+        "animate": [
+          "float"
+        ]
+      },
+      "render_controllers": ["controller.render.dish"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

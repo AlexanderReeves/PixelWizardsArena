@@ -1,0 +1,116 @@
+{
+  "format_version": "1.14",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "space:miniship",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+    },
+    
+    "components": {
+
+   //the family type for filters
+    "minecraft:type_family": {
+      "family": [
+          "space",
+          "miniship",
+          "neutral",
+          "nether_mob"
+      ]
+  },
+
+  "minecraft:can_fly": {
+  },
+
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
+        "speed_multiplier": 0.2,
+        "target_dist": 4.0,
+        "track_target": true
+      },
+      "minecraft:movement": {
+        "value": 0.2
+    },
+    "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_water": true,
+        "can_sink": false
+    },
+    "minecraft:movement.basic": {"value": 0.2},
+    "minecraft:jump.static": {},
+    "minecraft:behavior.random_stroll": {
+        "priority": 1,
+        "speed_multiplier": 0.2
+    },
+
+      "minecraft:rideable": {
+        "speed_multiplier": 0.2,
+        "seat_count": 1,
+        "interact_text": "",
+        "pull_in_entities": false,
+        "seats": {
+          "position": [ 0.0, 0.0, -10.0]
+        }
+      },
+
+      "minecraft:behavior.player_ride_tamed": {
+      },
+
+      "minecraft:is_tamed": {
+      },
+
+      "minecraft:is_saddled": {},
+
+      "minecraft:input_ground_controlled": {},
+
+      "minecraft:behavior.controlled_by_player": {
+        "priority": 0
+      },
+
+
+    "minecraft:scale": {
+        "value": 0.2
+    },
+
+
+    //hitbox/shadow
+    "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 2.0
+    },
+
+    "minecraft:nameable": {},
+    "minecraft:health": {
+        "value": 26,
+        "max": 30
+    },
+
+    "minecraft:physics": {"has_gravity": true},
+
+    
+    "minecraft:damage_sensor": {
+      "triggers": {
+          "cause": "all",
+          "deals_damage": false
+      }
+    }
+
+
+    },
+    "minecraft:pushable": {
+      "is_pushable": false,
+      "is_pushable_by_piston": true
+    },
+
+
+
+    "events": {
+
+    }
+
+  }
+}
