@@ -15,6 +15,8 @@ execute as @e[type=space:variables,scores={destinationint=2,battlestate=1,tutori
 #We will only run it once per ###second, just for the sake of not overworking the system
 function battle/forceride
 
+#====ALLOW WIZARDS TO COLLECT POWERUPS====
+function battle/collectpowerup
 
 
 #====ATTACK CODE====
@@ -25,6 +27,8 @@ execute as @e[scores={botatkcooldown=1..}] run function battle/cancelattack
 #The actual damage is dealt on a delay from when the move/animation starts...
 #Deal the damage here
 function battle/robotdealdamage
+#Also projectiles need to deal damage as they shoot across the world
+function battle/projectiledamage
 #attack cooldowns for robots should always be reducing back to 0 meaning they can attack again
 scoreboard players add @e[scores={botatkcooldown=1..}] botatkcooldown -1
 

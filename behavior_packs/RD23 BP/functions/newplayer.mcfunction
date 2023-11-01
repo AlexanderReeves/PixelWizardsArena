@@ -20,4 +20,7 @@ scoreboard players operation @s gsiterate += @e[type=space:variables] gsiterate
 scoreboard players set @s wandid 1
 scoreboard players set @s staffid 1
 
+#set the players magic charge to 0, charge is used for wand attacks
+scoreboard players set @s magiccharge 0
+
 tag @a add joined

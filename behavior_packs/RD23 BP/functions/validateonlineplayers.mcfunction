@@ -12,3 +12,6 @@ scoreboard players add @e[type=space:variables] gsiterate 1
 scoreboard players set @a gsiterate 0
 scoreboard players operation @a gsiterate += @e[type=space:variables] gsiterate
 
+#Let's take this chance to add a failsafe and set players magiccharge to 0 as well
+scoreboard players set @a magiccharge 0
+

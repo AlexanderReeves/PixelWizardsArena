@@ -164,6 +164,14 @@ scoreboard objectives add initialweapon dummy initialweapon
 scoreboard objectives remove activeweapon
 scoreboard objectives add activeweapon dummy activeweapon
 
+#scoreboard to track the players current wand charges
+scoreboard objectives remove magiccharge
+scoreboard objectives add magiccharge dummy magiccharge
+
+#scoreboard to give a life expiry timer to projectiles
+scoreboard objectives remove deathtimer
+scoreboard objectives add deathtimer dummy deathtimer
+
 #Objective to be used as an iterator for single use at any time when needed
 scoreboard objectives remove iterator
 scoreboard objectives add iterator dummy iterator

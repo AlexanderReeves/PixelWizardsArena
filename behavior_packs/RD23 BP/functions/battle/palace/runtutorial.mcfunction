@@ -1,7 +1,7 @@
 #Say the tutorial is running
 
 #=====PART 1, COLLECT THE ORBS======
-execute as @e[type=space:variables,scores={tutorialstate=1}] run titleraw @a actionbar {"rawtext":[{"text":"§71. Movement: §6Collect the orbs."}]}
+execute as @e[type=space:variables,scores={tutorialstate=1}] run titleraw @a actionbar {"rawtext":[{"text":"§71. §6Collect the orbs by walking around."}]}
 
 #Delete orbs when a robot is near!
 execute as @e[type=wizard:wizard] at @s run execute as @e[type=space:orb,r=1] run particle minecraft:totem_particle
@@ -58,7 +58,7 @@ execute as @e[type=space:variables,scores={tutorialstate=2..3}] run scoreboard p
 scoreboard players set @e[type=space:variables,tag=noorbs,scores={tutorialstate=1}] tutorialstate 2
 
 #P2 objective message
-execute as @e[type=space:variables,scores={tutorialstate=2}] run titleraw @a actionbar {"rawtext":[{"text":"§72. Attacking: §6Attack the dummy."}]}
+execute as @e[type=space:variables,scores={tutorialstate=2}] run titleraw @a actionbar {"rawtext":[{"text":"§72.§6 Attack the dummy by equiping your staff and walking towards it."}]}
 
 execute as @e[type=space:variables,scores={tutorialstate=2}] run ride @e[type=space:healthbar,tag=dummy] start_riding @e[type=space:dummy,c=1] teleport_rider
 
@@ -68,7 +68,18 @@ execute as @e[type=space:variables,scores={tutorialstate=2}] run execute as @e[t
 execute as @e[type=space:variables,tag=noorbs,scores={tutorialstate=2},tag=!dummyalive] run function battle/palace/tutorialp3
 
 #P3 objective message
-execute as @e[type=space:variables,scores={tutorialstate=3}] run titleraw @a actionbar {"rawtext":[{"text":"§72. Attacking: §6Collect the powerup and attack the dummy with a projectile."}]}
+execute as @e[type=space:variables,scores={tutorialstate=3}] run titleraw @a actionbar {"rawtext":[{"text":"§72. §6Attack the dummy with your wand from a distance (Charge it with a powerup)."}]}
+
+#P3 summon lightning if a player has no charges
+execute as @e[type=space:variables,scores={tutorialstate=3}] run execute as @a[scores={magiccharge=0}] run execute unless entity @e[type=wizard:lightning] run summon wizard:lightning -139.74 207.35 362.58
+
+#Load tutorial part 4 when the dummy dies again
+execute as @e[type=space:variables,scores={tutorialstate=3}] run tag @s add dummyalive
+execute as @e[type=space:variables,scores={tutorialstate=3}] run execute as @e[type=space:healthbar,scores={hb=..0}] run tag @e[type=space:variables] remove dummyalive
+execute as @e[type=space:variables,tag=noorbs,scores={tutorialstate=3},tag=!dummyalive] run function battle/palace/tutorialp4
+
+#P4 objective message
+execute as @e[type=space:variables,scores={tutorialstate=4}] run titleraw @a actionbar {"rawtext":[{"text":"§72. §6Walk backwards to drop a trap for the dummy."}]}
 
 
 
