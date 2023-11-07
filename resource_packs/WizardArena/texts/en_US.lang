@@ -1,7 +1,0 @@
-entity.wizard:wizard.name=wizard
-item.wizard:practise_wand=Practise Wand
-item.wizard:practise_staff=Practise Staff
-entity.wizard:lightning.name=Lightning
-item.wizard:ipractise_staff=Practise Staff
-item.wizard:ipractise_wand=Practise Wand
-entity.wizard:projectile_snow.name=Projectile Snow
