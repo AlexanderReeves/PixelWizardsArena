@@ -1,0 +1,132 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.robot.split": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 999999,
+			"bones": {
+				"Body": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 3, 0]
+					},
+					"scale": 1
+				},
+				"Arm1": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [5, 5, 0]
+					},
+					"scale": 1
+				},
+				"Arm2": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [-5, 5, 0]
+					},
+					"scale": 1
+				},
+				"Legs": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"Utility": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [2, 9, -3]
+					},
+					"scale": 1
+				},
+				"Super": {
+					"rotation": [0, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [-2, 9, -3]
+					},
+					"scale": 1
+				}
+			}
+		},
+		"animation.robot.view_arm1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 999999,
+			"bones": {
+				"Arm1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [90, -45, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 5, 0]
+					}
+				},
+				"Robot": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, -42.5, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [-3, 0, -5]
+					}
+				}
+			}
+		},
+		"animation.robot.unview_arm2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 999999,
+			"bones": {
+				"Arm1": {
+					"rotation": {
+						"0.0": [90, -45, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 5, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"Robot": {
+					"rotation": {
+						"0.0": [0, -42.5, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-3, 0, -5],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.robot.weapon1": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 999999,
+			"bones": {
+				"Weapon1": {
+					"scale": 1
+				},
+				"Weapon2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.robot.weapon2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 999999,
+			"bones": {
+				"Weapon1": {
+					"scale": 0
+				},
+				"Weapon2": {
+					"scale": 1
+				}
+			}
+		}
+	}
+}

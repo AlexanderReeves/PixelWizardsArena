@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:fireball",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/fireball"
+      },
+
+      "geometry": {
+        "default": "geometry.fireball"
+      },
+      "animations": {
+	      "spin": "animation.fireball.spin"
+      },
+      "scripts": {       
+        "animate": [
+          "spin"
+        ]
+      },
+      "render_controllers": ["controller.render.fireball"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:merchant",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "merchanta": "textures/entity/merchanta",
+        "merchantb": "textures/entity/merchantb",
+        "merchantc": "textures/entity/merchantc"
+      },
+      "geometry": {
+        "merchanta": "geometry.merchanta",
+        "merchantb": "geometry.merchantb",
+        "merchantc": "geometry.merchantc"
+      },
+      "animations": {
+	      "walk": "animation.merchant.walk",
+        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+      },
+      "scripts": {       
+          "animate": [
+	          "walk"
+          ]
+        },
+      "render_controllers": ["controller.render.merchant"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

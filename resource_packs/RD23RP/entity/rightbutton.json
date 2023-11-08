@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:rightbutton",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/rightbutton"
+      },
+
+      "geometry": {
+        "default": "geometry.rightbutton"
+      },
+      "animations": {
+	      "hover": "animation.powerup.hover"
+      },
+      "scripts": {          
+
+        },
+      "render_controllers": ["controller.render.rightbutton"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.satellite.float": {
+			"loop": true,
+			"animation_length": 8,
+			"bones": {
+				"whole": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"8": [360, 0, 360]
+					}
+				}
+			}
+		}
+	}
+}

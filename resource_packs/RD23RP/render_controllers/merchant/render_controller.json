@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+      "controller.render.merchant": {
+        "arrays": {
+          "textures": {
+            "Array.skins": [
+              "Texture.merchanta",
+              "Texture.merchantb",
+              "Texture.merchantc"
+            ]
+          },
+            "geometries": {
+            "Array.geos": [ "Geometry.merchanta", "Geometry.merchantb","Geometry.merchantc" ]
+          }   
+        },
+        "geometry": "query.get_equipped_item_name == 'diamond_sword' ? Array.geos[1] : (query.get_equipped_item_name == 'wooden_sword' ? Array.geos[2] : Array.geos[0])",
+        "materials": [  {  "*": "Material.default"   } ],
+        "textures": [ "query.get_equipped_item_name == 'diamond_sword' ? Array.skins[1] : (query.get_equipped_item_name == 'wooden_sword' ? Array.skins[2] : Array.skins[0])"],
+        "part_visibility" : [
+          { "*": true }
+        ]
+      }
+    }
+  }

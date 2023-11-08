@@ -1,0 +1,30 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wizard:ipull_trap",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:max_stack_size": 4,
+			"minecraft:icon": {
+				"texture": "ipull_trap"
+			},
+			"minecraft:glint": true,
+			"minecraft:durability": {
+				"max_durability": 251
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": ["iron_ingot"],
+						"repair_amount": 62
+					}
+				]
+			}
+		}
+	}
+}

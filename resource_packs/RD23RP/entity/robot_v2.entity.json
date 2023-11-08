@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:robot_v2",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/robot_v2"
+      },
+
+      "geometry": {
+        "default": "geometry.robot_v2"
+      },
+      "animations": {
+        "split": "animation.robot.split"
+      },
+      "scripts": {
+
+      },
+      "render_controllers": ["controller.render.robot_v2"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}

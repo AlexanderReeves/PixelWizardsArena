@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wizard:pull",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/pull"
+			},
+			"geometry": {
+				"default": "geometry.pull"
+			},
+			"animations": {
+		        "pull": "animation.pull.pull"
+		    },
+			"scripts": {
+	        	"animate": [
+	            "pull"
+	        	]
+	        },
+			"render_controllers": ["controller.render.default"],
+      "enable_attachables": true
+			
+
+		}
+	}
+}

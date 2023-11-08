@@ -1,0 +1,22 @@
+{
+	"texture_data": {
+		"ipull_trap": {
+			"textures": "textures/items/ipull_trap.png"
+		},
+		"pull_trap": {
+			"textures": "textures/items/pull_trap.png"
+		},
+		"ipractise_wand": {
+			"textures": "textures/items/ipractise_wand.png"
+		},
+		"ipractise_staff": {
+			"textures": "textures/items/ipractise_staff.png"
+		},
+		"practise_staff": {
+			"textures": "textures/items/practise_staff.png"
+		},
+		"practise_wand": {
+			"textures": "textures/items/practise_wand.png"
+		}
+	}
+}

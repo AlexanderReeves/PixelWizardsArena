@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wizard:ele_nature",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/ele_nature"
+			},
+			"geometry": {
+				"default": "geometry.ele_nature"
+			},
+			"animations": {
+		        "walk": "animation.ele_nature.walk",
+		        "look_at_target": "animation.humanoid.look_at_target.default.v1.0"
+		    },
+			"scripts": {
+	        	"animate": [
+	            //SO apparently the left column is not On Or Off, Its checking the right column for a value,
+	            //0 to 1.00 to determine what percent of the animation is playing
+	            //If the right column is 0.50, the only 50% of the animation value changes will occur
+	            //Perfect for altering a walk animation based on movement speed
+	            "look_at_target",
+	            {"walk" : "query.modified_move_speed*7" }
+	        	]
+	        },
+			"render_controllers": ["controller.render.default"]
+		}
+	}
+}

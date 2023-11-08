@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "space:portal",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/portal"
+      },
+
+      "geometry": {
+        "default": "geometry.portal"
+      },
+      "animations": {
+	      "rotate": "animation.portal.rotate",
+	      "antirotate": "animation.portal.antirotate"
+      },
+      "scripts": {       
+        "animate": [
+          "rotate"
+        ]
+      },
+      "render_controllers": ["controller.render.portal"],
+      "spawn_egg": {
+        "base_color": "#000000",
+        "overlay_color": "#ffffff"
+      }
+    }
+  }
+}
