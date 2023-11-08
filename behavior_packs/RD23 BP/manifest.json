@@ -15,9 +15,25 @@
 	},
 	"modules": [
 		{
-			"type": "data",
+			"type": "script",
 			"uuid": "fb7c47df-b3ae-4c28-94ea-88be976fdda1",
-			"version": [1, 0, 0]
+			"version": [1, 0, 0],
+			"entry": "scripts/Main.js"
 		}
+		
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+	  {
+			  // Enables the use of @minecraft/server module
+			  // note that version changes every monthly releases.
+		"module_name": "@minecraft/server",
+		"version": "1.5.0"
+	  },
+	  {
+			  // Enables the use of @minecraft/server-ui module
+		"module_name": "@minecraft/server-ui",
+		"version": "1.1.0"
+	  }
 	]
 }

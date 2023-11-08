@@ -197,3 +197,8 @@ scoreboard objectives add rng dummy rng
 scoreboard objectives remove wave
 scoreboard objectives add wave dummy wave
 scoreboard players set @e[type=space:variables] wave 0
+
+#Scoreboard for counting down time until the next wave
+scoreboard objectives remove wavecountdown
+scoreboard objectives add wavecountdown dummy wavecountdown
+scoreboard players set @e[type=space:variables] wavecountdown -1

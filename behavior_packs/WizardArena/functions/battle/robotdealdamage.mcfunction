@@ -24,11 +24,10 @@ execute as @a[scores={magiccharge=1..},tag=wizard1] run tag @e[tag=wiz1] add cha
 execute as @s[scores={tutorialstate=2}] run execute at @e[tag=!cancelattack,scores={botatkcooldown=29,initialweapon=2}] as @s run execute as @s positioned ^ ^ ^1 run scoreboard players add @e[tag=!cancelattack,type=space:healthbar,scores={hb=1..},r=3] hb -4
 execute as @s[scores={tutorialstate=2}] run execute at @e[tag=!cancelattack,scores={botatkcooldown=29,initialweapon=2}] as @s run execute as @s positioned ^ ^ ^1 run execute at @e[type=space:healthbar,scores={hb=1..},r=3] run particle minecraft:dragon_destroy_block
 
-#Hurt enemies.
+#Hurt enemies in main game
 tag @e[type=wizard:ele_nature] add enemy
-#Only run in tutorial state 2
 execute at @e[tag=!cancelattack,scores={botatkcooldown=29,initialweapon=2}] as @s run execute as @s positioned ^ ^ ^1 run execute at @e[tag=enemy,r=3] run particle minecraft:dragon_destroy_block
-execute at @e[tag=!cancelattack,scores={botatkcooldown=29,initialweapon=2}] as @s run execute as @s positioned ^ ^ ^1 run kill @e[tag=enemy,r=3]
+execute at @e[tag=!cancelattack,scores={botatkcooldown=29,initialweapon=2}] as @s run execute as @s positioned ^ ^ ^1 run kill @e[tag=enemy,r=2]
 
 
 #=======END DEAL DAMAGE======

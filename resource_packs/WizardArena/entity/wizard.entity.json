@@ -23,7 +23,7 @@
 	            //If the right column is 0.50, the only 50% of the animation value changes will occur
 	            //Perfect for altering a walk animation based on movement speed
 	            "look_at_target",
-	            {"walk" : "query.modified_move_speed" }
+	            {"walk" : "query.modified_move_speed*1" }
 	        	]
 	        },
 			"render_controllers": ["controller.render.default"],

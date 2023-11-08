@@ -5,10 +5,12 @@
 # AND
 # BATTLESTATE (changes depending on progress at an arena)
 
-#===PALACE LEVEL , PREGAME AND TUTORIAL(destinationint = 2, gamestate = 1)
+#===PALACE LEVEL , PREGAME AND TUTORIAL(destinationint = 2, battlestate = 1)
 execute as @e[type=space:variables,scores={destinationint=2,battlestate=1}] run function battle/palace/pregame
 #Run the tutorial if it is active with a score of 1 or more
 execute as @e[type=space:variables,scores={destinationint=2,battlestate=1,tutorialstate=1..}] run function battle/palace/runtutorial
+#Run the waves if the wave is 1 or higher (Note the offset of scoreboard wave 1 being for cutscenes, and wave 2 being for the first level)
+execute as @e[type=space:variables,scores={battlestate=1,wave=1..}] run function battle/runwaves
 
 #====RIDE WIZARD  AS PLAYER=======
 #Put each player on their respective robot while at any arena, there is no freeroam on planets.

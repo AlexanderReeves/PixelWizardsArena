@@ -4,7 +4,7 @@
 #wave 2 = wave 1
 scoreboard players set @e[type=space:variables] wave 2
 
-title @a actionbar §7Wave 2.
+title @a actionbar §bWave 1.
 
 #summon wave 1 enemies
 summon wizard:ele_nature -138.10 207.20 362.33

@@ -38,4 +38,7 @@ execute as @e[type=space:variables,scores={gamestate=4}] run function battle/mai
 #NO more gamestates should exists except for these 4. anything else should be a sub category
 #You could put some code here to automatically update the gsiterate value and validate players whenever there is a change in gamestate, rather than manually in every start.mcf
 
+#IN DEV CODE TO BE MOVED INTO THE BATTLE/MAIN ONCE FURTHER DEVELOPRED. DO NOT LEAVE HERE.
+function battle/applyKnockback
+
 
